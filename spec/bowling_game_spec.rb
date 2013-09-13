@@ -69,14 +69,14 @@ describe BowlingGame do
       end
     end
 
-    context 'when a strike is thrown in 10th frame' do
+    context 'when a spare is thrown in 10th frame' do
       it "lets the bowler bowl again" do
         19.times { game.roll(1) }
-        game.roll(10)
+        game.roll(9)
         game.roll(7)
 
 
-        expect(game.score).to eq(36)
+        expect(game.score).to eq(35)
       end
     end
 

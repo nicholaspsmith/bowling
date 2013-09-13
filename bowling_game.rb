@@ -15,6 +15,12 @@ class BowlingGame
   #
   # Returns nothing.
   def roll(pins)
+    # need to implement pins remaining
+    # if rolls_completed % 2 == 0 
+    #   pins_remaining = 10
+    # else
+    #   pins_remaing = 10 - pins
+    # end
     if @rolls_completed < 20
       @rolls.push(pins)
     elsif @rolls_completed == 20
